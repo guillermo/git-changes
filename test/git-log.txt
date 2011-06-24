@@ -1,0 +1,117 @@
+commit 06437883f3f058e5f63822ba8be9a07b3889dc8a
+Author: Guillermo Álvarez <guillermo@cientifico.net>
+Date:   2011-06-24
+
+    tomate esa2
+
+ README.md |   71 -------------------------------------------------------------
+ 1 files changed, 0 insertions(+), 71 deletions(-)
+ delete mode 100755 README.md
+
+commit 0fbc6bf8a277ee421b7cfb25e5b866539320b7d9
+Author: Guillermo Álvarez <guillermo@cientifico.net>
+Date:   2011-06-24
+
+    tomate esa
+
+ 0 files changed, 0 insertions(+), 0 deletions(-)
+ mode change 100644 => 100755 README.md
+
+commit 0b2f9f116f6cd67c70f11d2e5667c68cb89e400a
+Author: Guillermo Álvarez <guillermo@cientifico.net>
+Date:   2010-06-22
+
+    Explicit 'git remote add origin #{deploy.repository}' to the bare repo
+    (Forgot something: Bare git repos don't save the origin.)
+
+ lib/rake/deploy.rb |    3 ++-
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+
+commit c8e409b0b8b65799caa112712c0936d53f9cc717
+Author: Guillermo Álvarez <guillermo@cientifico.net>
+Date:   2010-06-22
+
+    Remove the explicity host when calling deploy.run(deploy.host)
+
+ lib/rake/deploy.rb |   22 +++++++++++-----------
+ 1 files changed, 11 insertions(+), 11 deletions(-)
+
+commit ec9a2742752864653eb651bcdfc684415a56e738
+Author: Guillermo Álvarez <guillermo@cientifico.net>
+Date:   2010-06-22
+
+    Improve run method:
+      * 1,2 or 3 parameters: (command), (host,command), (host,user,command)
+      * Let host be an array of hosts: deploy.run(["machine1","machine2"],"ls")
+
+ lib/rake/deploy/deploy.rb |   29 ++++++++++++++++++++++++-----
+ test/test_deploy.rb       |   33 +++++++++++++++++++++++++++++++++
+ 2 files changed, 57 insertions(+), 5 deletions(-)
+ create mode 100644 test/test_deploy.rb
+
+commit 4b7db26d9e3e354ee70fb3f8540218b142082d88
+Author: Guillermo Álvarez <guillermo@cientifico.net>
+Date:   2010-06-22
+
+    Add a rake file to test
+
+ Rakefile |   10 ++++++++++
+ 1 files changed, 10 insertions(+), 0 deletions(-)
+ create mode 100644 Rakefile
+
+commit f37805bf5bf1744244cfb23d5f0da80efa486f02
+Author: Guillermo Álvarez <guillermo@cientifico.net>
+Date:   2010-06-22
+
+    Create deploy.current_path in :generate_timestamp
+
+ lib/rake/deploy.rb |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 3d9096ef668bbb607150651c198b35bfdaa042ca
+Author: Guillermo Álvarez <guillermo@cientifico.net>
+Date:   2010-06-22
+
+    Load dependencies only where dependencies are needed.
+
+ lib/rake/deploy.rb        |    2 --
+ lib/rake/deploy/deploy.rb |    3 +++
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+commit e2c2335da79d07724bf4608dcc38b319061026ef
+Author: Guillermo Álvarez <guillermo@cientifico.net>
+Date:   2010-06-22
+
+    Remove restart hook from deploy.rb (ups!)
+
+ lib/rake/deploy.rb |    5 -----
+ 1 files changed, 0 insertions(+), 5 deletions(-)
+
+commit 6af3fed781b93eb48242613e1ba1538ba6ddfee5
+Author: Guillermo Álvarez <guillermo@cientifico.net>
+Date:   2010-06-22
+
+    Update README.md to show new links to the github wiki.
+
+ README.md |    8 ++++----
+ 1 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 5c4c582ca6a11fee844df4b03b52f21a0665ca77
+Author: Guillermo Álvarez <guillermo@cientifico.net>
+Date:   2010-06-22
+
+    Initial version
+
+ .gitignore                |    2 +
+ LICENSE                   |   22 ++++++++++++++
+ README.md                 |   71 +++++++++++++++++++++++++++++++++++++++++++++
+ lib/rake/deploy.rb        |   61 ++++++++++++++++++++++++++++++++++++++
+ lib/rake/deploy/deploy.rb |   19 ++++++++++++
+ lib/rake/deploy/object.rb |    5 +++
+ 6 files changed, 180 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+ create mode 100644 LICENSE
+ create mode 100644 README.md
+ create mode 100644 lib/rake/deploy.rb
+ create mode 100644 lib/rake/deploy/deploy.rb
+ create mode 100644 lib/rake/deploy/object.rb

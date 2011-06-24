@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'git-changes'
+
+Git::Changelog::CLI.process!

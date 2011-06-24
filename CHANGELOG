@@ -1,0 +1,4 @@
+2011-06-24 Guillermo Álvarez <guillermo@cientifico.net>
+
+    * .gitignore, Gemfile, LICENSE, README.md, Rakefile, git-changes, git-changelog.gemspec, git-changelog.rb, cli.rb, parser.rb, version.rb, git-changelog.txt, git-log.txt, test_git-changelog.rb: Initial version
+

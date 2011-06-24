@@ -1,0 +1,26 @@
+2011-06-24 Guillermo Álvarez <guillermo@cientifico.net>
+
+    * README.md: tomate esa2
+
+    * README.md: tomate esa
+
+2010-06-22 Guillermo Álvarez <guillermo@cientifico.net>
+
+    * deploy.rb: Explicit 'git remote add origin #{deploy.repository}' to the bare repo
+
+    * deploy.rb: Remove the explicity host when calling deploy.run(deploy.host)
+
+    * deploy.rb, test_deploy.rb: Improve run method:
+
+    * Rakefile: Add a rake file to test
+
+    * deploy.rb: Create deploy.current_path in :generate_timestamp
+
+    * deploy.rb: Load dependencies only where dependencies are needed.
+
+    * deploy.rb: Remove restart hook from deploy.rb (ups!)
+
+    * README.md: Update README.md to show new links to the github wiki.
+
+    * .gitignore, LICENSE, README.md, deploy.rb, object.rb: Initial version
+
